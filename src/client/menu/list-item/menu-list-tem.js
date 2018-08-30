@@ -1,4 +1,4 @@
-import './main-list-item.css';
+import './menu-list-item.css';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -10,7 +10,7 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-class MainListItem extends Component {
+class MenuListItem extends Component {
     constructor(props) {
         super(props);
     }
@@ -18,12 +18,12 @@ class MainListItem extends Component {
 
     render() {
         return (
-            <div className="main-list-item" onClick={() => this.props.goToPage(this.props.action)}>
+            <li className="menu-list-item" onClick={() => this.props.goToPage(this.props.action)}>
                 {this.props.pageName}
-            </div>
+            </li>
         );
     }
 }
 
 
-export default connect(null, mapDispatchToProps)(MainListItem);
+export default connect(null, mapDispatchToProps)(MenuListItem);

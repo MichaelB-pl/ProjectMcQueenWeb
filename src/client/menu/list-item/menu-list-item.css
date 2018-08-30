@@ -1,0 +1,12 @@
+.menu-list-item {
+    width: calc(100% - (var(--spacing) + var(--spacing-big)) * 2);
+    max-width: 320px;
+    background-color: var(--color-accent);
+    margin: var(--spacing);
+    text-align: center;
+    padding: var(--spacing-big);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 black;
+}

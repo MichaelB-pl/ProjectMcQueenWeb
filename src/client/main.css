@@ -1,8 +1,18 @@
+:root {
+    --spacing: 16px;
+    --spacing-big: 32px;
+    --color-primary: #8bc34a;
+    --color-primary-dark: #5a9216;
+    --color-primary-light: #bef67a;
+    --color-primary-extra-light: #f2ffab;
+    --color-accent: #790e8b;
+}
+
 body {
     margin: 0;
 }
 
-#root{
+#root {
     width: 100vw;
     height: 100vh;
 }

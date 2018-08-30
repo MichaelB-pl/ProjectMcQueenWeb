@@ -1,8 +1,8 @@
 import { Actions } from '../reducers/app-reducer';
 
-export function mainPageCreator() {
+export function menuPageCreator() {
     return {
-        type: Actions.MAIN_PAGE
+        type: Actions.MENU_PAGE
     };
 }
 

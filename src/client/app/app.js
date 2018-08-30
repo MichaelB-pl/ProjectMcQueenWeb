@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Actions as Pages } from './reducers/app-reducer';
 
-import MainPage from '../main/main';
+import MenuPage from '../menu/menu';
 import AlphabetPage from '../alphabet/alphabet';
 
 
@@ -15,8 +15,8 @@ const mapStateToProps = (state) => {
 
 function getDesiredPage(page) {
     switch (page) {
-        case Pages.MAIN_PAGE:
-            return (<MainPage />);
+        case Pages.MENU_PAGE:
+            return (<MenuPage />);
         case Pages.ALPHABET_PAGE:
             return (<AlphabetPage />);
         default:
