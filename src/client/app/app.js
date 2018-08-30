@@ -9,15 +9,15 @@ import AlphabetPage from '../alphabet/alphabet';
 
 const mapStateToProps = (state) => {
     return {
-        page: state.page
+        pageIndex: state.pageIndex
     };
 };
 
-function getDesiredPage(page) {
-    switch (page) {
-        case Pages.MENU_PAGE:
+function getDesiredPage(index) {
+    switch (index) {
+        case 0:
             return (<MenuPage />);
-        case Pages.ALPHABET_PAGE:
+        case 1:
             return (<AlphabetPage />);
         default:
             return null;
@@ -27,7 +27,7 @@ function getDesiredPage(page) {
 function App(props) {
     return (
         <div className="app">
-            {getDesiredPage(props.page)}
+            {getDesiredPage(props.pageIndex)}
         </div>
     );
 }

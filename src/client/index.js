@@ -6,6 +6,9 @@ import { Provider } from 'react-redux';
 import App from './app/app';
 import store from './store';
 
+import { getLastPageIndex } from './app/services/session-service';
+import { setPageIndexCreator } from './app/actions/app-actions-creator';
+
 function render() {
     ReactDOM.render(
         <Provider store={store}>
@@ -15,4 +18,11 @@ function render() {
     );
 }
 
-(render());
+function loadPageIndex() {
+    getLastPageIndex().then(index => {
+        store.dispatch(setPageIndexCreator(index));
+        render();
+    });
+}
+
+(loadPageIndex());

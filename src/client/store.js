@@ -5,7 +5,7 @@ import AppReducer from './app/reducers/app-reducer';
 import AlphabetReducer from './alphabet/reducers/alphabet-reducer';
 
 const rootReducer = combineReducers({
-    page: AppReducer,
+    pageIndex: AppReducer,
     alphabet: AlphabetReducer
 });
 

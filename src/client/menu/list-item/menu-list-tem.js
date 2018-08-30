@@ -2,11 +2,11 @@ import './menu-list-item.css';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { goToPage } from '../../app/actions/app-actions';
+import { setPageIndex } from '../../app/actions/app-actions';
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        goToPage: page => dispatch(goToPage(page))
+        setPageIndex: index => dispatch(setPageIndex(index))
     };
 };
 
@@ -15,13 +15,18 @@ class MenuListItem extends Component {
         super(props);
     }
 
-
     render() {
         return (
-            <li className="menu-list-item" onClick={() => this.props.goToPage(this.props.action())}>
+            <li className="menu-list-item"
+                onClick={this.goToPage.bind(this)}>
                 {this.props.pageName}
             </li>
         );
+    }
+
+    goToPage() {
+        this.props.preparePage();
+        this.props.setPageIndex(this.props.pageIndex);
     }
 }
 

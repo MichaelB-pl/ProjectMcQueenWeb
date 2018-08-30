@@ -1,15 +1,16 @@
 export const Actions = {
-    MENU_PAGE: Symbol('menu-page'),
-    ALPHABET_PAGE: Symbol('alphabet-page')
+    MAIN_MENU: Symbol('main-menu'),
+    SET_PAGE_INDEX: Symbol('set-page-index')
 };
 
-const DEFAULT_STATE = Actions.MENU_PAGE;
+const DEFAULT_STATE = 0;
 
-export default function AppReducer(state = DEFAULT_STATE, { type }) {
+export default function AppReducer(state = DEFAULT_STATE, { type, index }) {
     switch (type) {
-        case Actions.MENU_PAGE:
-        case Actions.ALPHABET_PAGE:
-            return type;
+        case Actions.MAIN_MENU:
+            return DEFAULT_STATE;
+        case Actions.SET_PAGE_INDEX:
+            return index;
         default:
             return state;
     }

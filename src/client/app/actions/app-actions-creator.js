@@ -1,13 +1,14 @@
 import { Actions } from '../reducers/app-reducer';
 
-export function menuPageCreator() {
+export function mainMenuCreator() {
     return {
-        type: Actions.MENU_PAGE
+        type: Actions.MAIN_MENU
     };
 }
 
-export function alphabetPageCreator() {
+export function setPageIndexCreator(index) {
     return {
-        type: Actions.ALPHABET_PAGE
+        type: Actions.SET_PAGE_INDEX,
+        index
     };
 }

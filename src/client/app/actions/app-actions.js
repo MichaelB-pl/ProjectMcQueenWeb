@@ -1,36 +1,27 @@
-import { menuPageCreator, alphabetPageCreator } from './app-actions-creator';
-import { Actions } from '../reducers/app-reducer';
+import { mainMenuCreator, setPageIndexCreator } from './app-actions-creator';
 import { setDefaultIndex } from '../../alphabet/actions/alphabet-actions';
+import { savePageIndex } from '../services/session-service';
 
-export function goToPage(page) {
+export function mainMenu() {
     return dispatch => {
-        switch (page) {
-            case Actions.MENU_PAGE:
-                dispatch(menuPageCreator());
-            case Actions.ALPHABET_PAGE:
-                dispatch(alphabetPageCreator());
-            default:
-                break;
-        }
-    }
+        savePageIndex(0);
+        dispatch(mainMenuCreator());
+    };
+}
+
+export function setPageIndex(index) {
+    return dispatch => {
+        savePageIndex(index);
+        dispatch(setPageIndexCreator(index));
+    };
 }
 
 export function getAllPagesWithoutMenuPage() {
-    // const list = [
-    //     { name: 'Alfabet', action: Actions.ALPHABET_PAGE }
-    // ];
-    // let newList = [];
-    // while (newList.length < 30) {
-    //     newList = [...newList, ...list];
-    // }
-    // return newList;
     return [
         {
             name: 'Alfabet',
-            action: () => {
-                setDefaultIndex();
-                return Actions.ALPHABET_PAGE;
-            }
+            prepare: setDefaultIndex,
+            index: 1
         }
     ];
 }

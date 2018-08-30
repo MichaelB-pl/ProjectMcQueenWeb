@@ -11,7 +11,12 @@ export default function Menu() {
         <div className="menu-container">
             <ul className="menu-list noselect">
                 {pages.map((page, index) => {
-                    return (<ListItem pageName={page.name} action={page.action} key={`menu_item_${index}`} />);
+                    return (<ListItem
+                        pageName={page.name}
+                        pageIndex={page.index}
+                        preparePage={page.prepare}
+                        key={`menu_item_${index}`}
+                    />);
                 })}
             </ul>
         </div>
