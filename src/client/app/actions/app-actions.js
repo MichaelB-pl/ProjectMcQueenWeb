@@ -15,15 +15,15 @@ export function goToPage(page) {
 }
 
 export function getAllPagesWithoutMenuPage() {
-    const list = [
-        { name: 'Alfabet', action: Actions.ALPHABET_PAGE }
-    ];
-    let newList = [];
-    for (let i = 0; i < 100; i++) {
-        newList = [...newList, list];
-    }
-    return newList;
-    // return [
+    // const list = [
     //     { name: 'Alfabet', action: Actions.ALPHABET_PAGE }
     // ];
+    // let newList = [];
+    // while (newList.length < 30) {
+    //     newList = [...newList, ...list];
+    // }
+    // return newList;
+    return [
+        { name: 'Alfabet', action: Actions.ALPHABET_PAGE }
+    ];
 }

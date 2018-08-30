@@ -8,8 +8,12 @@ export default function Menu() {
     const pages = getAllPagesWithoutMenuPage();
 
     return (
-        <ul className="menu-list">
-            {pages.map((page, index) => (<ListItem pageName={page.name} action={page.action} key={index} />))}
-        </ul>
+        <div className="menu-container">
+            <ul className="menu-list noselect">
+                {pages.map((page, index) => {
+                    return (<ListItem pageName={page.name} action={page.action} key={`menu_item_${index}`} />);
+                })}
+            </ul>
+        </div>
     );
 }

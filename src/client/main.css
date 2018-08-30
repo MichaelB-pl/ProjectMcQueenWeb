@@ -1,11 +1,15 @@
 :root {
     --spacing: 16px;
     --spacing-big: 32px;
+    --topbar-height: 56px;
     --color-primary: #8bc34a;
     --color-primary-dark: #5a9216;
     --color-primary-light: #bef67a;
     --color-primary-extra-light: #f2ffab;
     --color-accent: #790e8b;
+    --transition-duration: 0.3s;
+    --transition-short-duration: 0.2s;
+    --transition-long-duration: 0.5s;
 }
 
 body {
@@ -15,4 +19,13 @@ body {
 #root {
     width: 100vw;
     height: 100vh;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

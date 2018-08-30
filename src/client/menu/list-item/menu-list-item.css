@@ -1,12 +1,28 @@
 .menu-list-item {
     width: calc(100% - (var(--spacing) + var(--spacing-big)) * 2);
-    max-width: 320px;
-    background-color: var(--color-accent);
+    max-width: 480px;
+    height: auto;
+    min-height: 90px;
+    background-color: var(--color-primary-light);
     margin: var(--spacing);
-    text-align: center;
     padding: var(--spacing-big);
     font-size: 24px;
     font-weight: bold;
     border-radius: 4px;
     box-shadow: 0 2px 4px 0 black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-duration);
+}
+
+@media(max-width: 420px) {
+    .menu-list-item {
+        width: calc(100% - var(--spacing-big) * 2);
+        min-height: 60px;
+        margin: calc(var(--spacing) / 2) 0;
+        border-radius: 0;
+        box-shadow: 0 2px 4px -3px black;
+    }
 }
