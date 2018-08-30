@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ['./src/index.js']
+        app: ['./src/client/index.js']
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -27,8 +27,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'My first test project',
-            template: './src/index.html'
+            title: 'ProjectMcQueen',
+            template: './src/client/index.html'
         })
     ]
 };
