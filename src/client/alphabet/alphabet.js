@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 function Alphabet(props) {
     return (
-        <div>
+        <div className="alphabet-container">
         </div>
     );
 }

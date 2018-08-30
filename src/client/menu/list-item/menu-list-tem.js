@@ -18,7 +18,7 @@ class MenuListItem extends Component {
 
     render() {
         return (
-            <li className="menu-list-item" onClick={() => this.props.goToPage(this.props.action)}>
+            <li className="menu-list-item" onClick={() => this.props.goToPage(this.props.action())}>
                 {this.props.pageName}
             </li>
         );

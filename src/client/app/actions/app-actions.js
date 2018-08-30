@@ -1,5 +1,6 @@
 import { menuPageCreator, alphabetPageCreator } from './app-actions-creator';
 import { Actions } from '../reducers/app-reducer';
+import { setDefaultIndex } from '../../alphabet/actions/alphabet-actions';
 
 export function goToPage(page) {
     return dispatch => {
@@ -24,6 +25,12 @@ export function getAllPagesWithoutMenuPage() {
     // }
     // return newList;
     return [
-        { name: 'Alfabet', action: Actions.ALPHABET_PAGE }
+        {
+            name: 'Alfabet',
+            action: () => {
+                setDefaultIndex();
+                return Actions.ALPHABET_PAGE;
+            }
+        }
     ];
 }
