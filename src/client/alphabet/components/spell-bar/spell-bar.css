@@ -1,0 +1,16 @@
+.spell-bar{
+    width: 100%;
+    height: var(--bar-size);
+    background-color: var(--color-primary);
+    z-index: 60;
+    box-shadow: 0 0 4px 0 black;
+}
+
+/* .spell-bar::before{
+    content: "";
+    width: 100%;
+    height: 32px;
+    background-color: blue;
+    position: absolute;
+    
+} */

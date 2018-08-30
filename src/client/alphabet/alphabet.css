@@ -1,5 +1,14 @@
+:root {
+    --bar-size: 56px;
+    --alphabeth-dp: calc((100% - var(--bar-size) * 2) / 8);
+}
+
 .alphabet-container {
     width: 100%;
     height: 100%;
     background-color: var(--color-primary-extra-light);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
 }

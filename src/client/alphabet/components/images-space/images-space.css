@@ -1,0 +1,6 @@
+.images-space {
+    width: 100%;
+    height: calc(var(--alphabeth-dp) * 3);
+    background-color: var(--color-primary-light);
+    z-index: 20;
+}

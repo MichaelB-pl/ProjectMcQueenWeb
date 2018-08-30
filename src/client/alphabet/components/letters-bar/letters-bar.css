@@ -1,0 +1,12 @@
+.letters-bar {
+    width: 100%;
+    height: var(--bar-size);
+    background-color: var(--color-primary);
+    margin: 0;
+    box-shadow: 0 0 16px 0 black;
+    z-index: 80;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
