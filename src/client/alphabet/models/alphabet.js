@@ -6,7 +6,13 @@ export default function getAlphabet() {
             {
                 letter: 'A',
                 names: ["Agrafka", "Ananas", "Aparat", "Arbuz", "Autobus"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/588/588398.svg',
+                    'https://image.flaticon.com/icons/svg/164/164830.svg',
+                    'https://image.flaticon.com/icons/svg/148/148717.svg',
+                    'https://image.flaticon.com/icons/svg/361/361962.svg',
+                    'https://image.flaticon.com/icons/svg/296/296214.svg'
+                ]
             }
         ),
         new AlphabetItem(

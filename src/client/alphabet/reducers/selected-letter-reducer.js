@@ -7,6 +7,7 @@ const DEFAULT_STATE = 0;
 
 export default function SelectedLetterReducer(state = DEFAULT_STATE,
     { type, index }) {
+
     switch (type) {
         case Actions.SET_INDEX:
             return index;

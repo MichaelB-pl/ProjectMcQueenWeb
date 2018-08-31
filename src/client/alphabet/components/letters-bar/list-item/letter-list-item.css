@@ -9,4 +9,9 @@
     color: white;
     font-size: calc(var(--bar-size) * 0.6);
     font-weight: bolder;
+    transform: rotateX(180deg);
+}
+
+.selected-letter {
+    background-color: var(--color-primary-dark);
 }

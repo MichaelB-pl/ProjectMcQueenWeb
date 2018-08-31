@@ -9,7 +9,7 @@ import ImagesSpace from './components/images-space/images-space';
 
 function Alphabet(props) {
     return (
-        <div className="alphabet-container">
+        <div className="alphabet-container noselect">
             <LettersBar />
             <MainSpace />
             <SpellBar />

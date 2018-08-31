@@ -13,22 +13,28 @@
     list-style: none;
     overflow: overlay;
     transition: 3s;
+    transform: rotateX(180deg);
+}
+
+.letters-bar:hover::-webkit-scrollbar {
+    display: initial;
 }
 
 .letters-bar::-webkit-scrollbar {
     height: calc(var(--bar-size) * 0.15);
+    display: none;
 }
 
 .letters-bar::-webkit-scrollbar-track {
-    background: #84bf40;
+    background: #0000;
 }
 
 .letters-bar::-webkit-scrollbar-track:hover {
-    background: #699933;
+    background: #0002;
 }
 
 .letters-bar::-webkit-scrollbar-thumb {
-    background: #fff2;
+    background: #fff3;
 }
 
 .letters-bar::-webkit-scrollbar-thumb:hover {
