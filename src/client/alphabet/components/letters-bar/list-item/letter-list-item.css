@@ -1,0 +1,12 @@
+.letter-list-item {
+    width: var(--bar-size);
+    height: var(--bar-size);
+    /* background-color: pink; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: calc(var(--bar-size) * 0.6);
+    font-weight: bolder;
+}

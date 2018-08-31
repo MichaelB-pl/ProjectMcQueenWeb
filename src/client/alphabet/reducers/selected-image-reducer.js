@@ -3,9 +3,10 @@ export const Actions = {
     SET_DEFAULT_INDEX: Symbol('set-default-index')
 };
 
-const DEFAULT_STATE = 0;
+const DEFAULT_STATE = -1;
 
-export default function AlphabetReducer(state = DEFAULT_STATE, { type, index }) {
+export default function SelectedImageReducer(state = DEFAULT_STATE,
+    { type, index }) {
     switch (type) {
         case Actions.SET_INDEX:
             return index;

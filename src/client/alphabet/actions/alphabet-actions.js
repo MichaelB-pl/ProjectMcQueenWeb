@@ -1,9 +1,25 @@
-import { setIndexCreator, setDefaultIndexCreator } from './alphabet-actions-creator';
+import {
+    setLetterIndexCreator,
+    setDefaultLetterIndexCreator,
+    setImageIndexCreator,
+    setDefaultImageIndexCreator
+} from './alphabet-actions-creator';
 
-export function setIndex(index) {
-    return dispatch => dispatch(setIndexCreator(index));
+//ToDo: Save States;
+
+export function setLetterIndex(index) {
+    return dispatch => dispatch(setLetterIndexCreator(index));
 }
 
-export function setDefaultIndex() {
-    return dispatch => dispatch(setDefaultIndexCreator());
+export function setDefaultLetterIndex() {
+    return dispatch => dispatch(setDefaultLetterIndexCreator());
+}
+
+
+export function setImageIndex(index) {
+    return dispatch => dispatch(setImageIndexCreator(index));
+}
+
+export function setDefaultImageIndex() {
+    return dispatch => dispatch(setDefaultImageIndexCreator());
 }

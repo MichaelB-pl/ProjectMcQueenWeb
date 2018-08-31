@@ -2,11 +2,13 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import AppReducer from './app/reducers/app-reducer';
-import AlphabetReducer from './alphabet/reducers/alphabet-reducer';
+import SelectedLetterReducer from './alphabet/reducers/selected-letter-reducer';
+import SelectedImageReducer from './alphabet/reducers/selected-image-reducer';
 
 const rootReducer = combineReducers({
     pageIndex: AppReducer,
-    alphabet: AlphabetReducer
+    selectedLetterIndex: SelectedLetterReducer,
+    selectedLetterImageIndex: SelectedImageReducer
 });
 
 const store = createStore(
