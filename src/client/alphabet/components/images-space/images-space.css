@@ -3,4 +3,8 @@
     height: calc(var(--alphabeth-dp) * 3);
     background-color: var(--color-primary-light);
     z-index: 20;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }

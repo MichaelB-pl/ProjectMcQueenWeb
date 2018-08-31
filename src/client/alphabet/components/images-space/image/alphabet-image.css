@@ -1,0 +1,20 @@
+.alphabet-image {
+    width: 33%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.alphabet-image>img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media screen and (orientation:landscape) {
+    .alphabet-image {
+        width: 20%;
+        height: 100%;
+    }
+}
