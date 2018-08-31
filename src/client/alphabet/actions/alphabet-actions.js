@@ -10,7 +10,6 @@ import {
 } from '../services/alphabet-services';
 import { DEFAULT_STATE as LETTER_DEFAULT_STATE } from '../reducers/selected-letter-reducer';
 import { DEFAULT_STATE as IMAGE_DEFAULT_STATE } from '../reducers/selected-image-reducer';
-//ToDo: Save States;
 
 export function setLetterIndex(index) {
     saveLastLetterIndex(index);

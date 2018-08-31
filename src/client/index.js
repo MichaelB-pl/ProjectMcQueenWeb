@@ -8,6 +8,8 @@ import store from './store';
 
 import { getLastPageIndex } from './app/services/session-service';
 import { setPageIndexCreator } from './app/actions/app-actions-creator';
+import { getLastLetterIndex, getLastImageIndex } from './alphabet/services/alphabet-services';
+import { setLetterIndexCreator, setImageIndexCreator } from './alphabet/actions/alphabet-actions-creator';
 
 function render() {
     ReactDOM.render(
@@ -18,11 +20,26 @@ function render() {
     );
 }
 
-function loadPageIndex() {
-    getLastPageIndex().then(index => {
-        store.dispatch(setPageIndexCreator(index));
+const promises = [
+    getLastPageIndex(),
+    getLastLetterIndex(),
+    getLastImageIndex(),
+];
+
+const creators = [
+    setPageIndexCreator,
+    setLetterIndexCreator,
+    setImageIndexCreator
+];
+
+function loadSessionInfo() {
+    Promise.all(promises).then(indexes => {
+        console.log(indexes);
+        for (let j = 0; j < indexes.length; j++) {
+            store.dispatch(creators[j](indexes[j]));
+        }
         render();
     });
 }
 
-(loadPageIndex());
+(loadSessionInfo());
