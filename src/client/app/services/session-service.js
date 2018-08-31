@@ -9,6 +9,7 @@ export function getLastPageIndex() {
 }
 
 export function savePageIndex(pageIndex) {
-    return new Promise(resolve =>
-        sessionStorage.setItem(PAGE_STORAGE_KEY, JSON.stringify(pageIndex)));
+    return new Promise(() =>
+    sessionStorage.setItem(PAGE_STORAGE_KEY, JSON.stringify(pageIndex))
+    );
 }

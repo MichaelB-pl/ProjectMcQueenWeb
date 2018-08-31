@@ -1,18 +1,39 @@
 import './alphabet-image.css';
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { basename } from 'path';
 
-export default class AlphabetImage extends Component {
+import { setImageIndex } from '../../../actions/alphabet-actions';
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setImageIndex: index => dispatch(setImageIndex(index))
+    };
+};
+
+class AlphabetImage extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
+        const { uri } = this.props;
         return (
-            <div className="alphabet-image">
-                <img src={this.props.uri} />
+            <div className="alphabet-image" onClick={this.setImageIndex.bind(this)}>
+                <img src={uri} />
             </div>
         );
     }
+
+    setImageIndex() {
+
+        const { uri, index, setImageIndex } = this.props;
+        // console.log(`Click: ${index}`);
+        // console.log(uri);
+        // console.log(setImageIndex);
+
+        if (uri)
+            setImageIndex(index);
+    }
 }
+
+export default connect(null, mapDispatchToProps)(AlphabetImage);

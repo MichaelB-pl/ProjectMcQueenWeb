@@ -1,7 +1,14 @@
-.spell-bar{
+.spell-bar {
     width: 100%;
     height: var(--bar-size);
     background-color: var(--color-primary);
     z-index: 60;
     box-shadow: 0 0 4px 0 black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--bar-size) * 0.5);
+    color: white;
+    font-weight: bold;
 }

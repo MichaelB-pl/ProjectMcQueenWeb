@@ -14,9 +14,7 @@ const mapStateToProps = ({ selectedLetterIndex }) => {
 
 function ImagesSpace(props) {
     const index = props.selectedLetterIndex;
-    console.log(index);
     const { uris } = getAlphabet()[index];
-    console.log(uris);
     return (
         <div className="images-space">
             {uris.map((uri, index) => {

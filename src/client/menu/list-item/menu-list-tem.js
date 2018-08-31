@@ -25,8 +25,9 @@ class MenuListItem extends Component {
     }
 
     goToPage() {
-        this.props.preparePage();
-        this.props.setPageIndex(this.props.pageIndex);
+        const { preparePage, setPageIndex } = this.props;
+        preparePage();
+        setPageIndex(this.props.pageIndex);
     }
 }
 

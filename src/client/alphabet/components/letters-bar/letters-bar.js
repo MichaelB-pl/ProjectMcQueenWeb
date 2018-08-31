@@ -10,7 +10,7 @@ const mapStateToProps = ({ selectedLetterIndex }) => {
     return {
         selectedLetterIndex
     };
-}
+};
 
 function LettersBar(props) {
     const alphabet = getAlphabet().map(letter => letter.letter);

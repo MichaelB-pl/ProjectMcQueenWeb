@@ -3,7 +3,7 @@ export const Actions = {
     SET_DEFAULT_INDEX: Symbol('set-default-index')
 };
 
-const DEFAULT_STATE = 0;
+export const DEFAULT_STATE = 0;
 
 export default function SelectedLetterReducer(state = DEFAULT_STATE,
     { type, index }) {

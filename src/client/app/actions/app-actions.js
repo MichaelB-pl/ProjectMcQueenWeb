@@ -1,10 +1,11 @@
 import { mainMenuCreator, setPageIndexCreator } from './app-actions-creator';
-import { setDefaultIndex } from '../../alphabet/actions/alphabet-actions';
+import { setDefaultLetterIndex, setDefaultImageIndex } from '../../alphabet/actions/alphabet-actions';
 import { savePageIndex } from '../services/session-service';
+import { DEFAULT_STATE as PAGE_DEFAULT_STATE } from '../reducers/app-reducer';
 
 export function mainMenu() {
     return dispatch => {
-        savePageIndex(0);
+        savePageIndex(PAGE_DEFAULT_STATE);
         dispatch(mainMenuCreator());
     };
 }
@@ -20,7 +21,10 @@ export function getAllPagesWithoutMenuPage() {
     return [
         {
             name: 'Alfabet',
-            prepare: setDefaultIndex,
+            prepare: () => {
+                setDefaultLetterIndex();
+                setDefaultImageIndex();
+            },
             index: 1
         }
     ];

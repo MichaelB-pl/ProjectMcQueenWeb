@@ -3,7 +3,7 @@ export const Actions = {
     SET_PAGE_INDEX: Symbol('set-page-index')
 };
 
-const DEFAULT_STATE = 0;
+export const DEFAULT_STATE = 0;
 
 export default function AppReducer(state = DEFAULT_STATE, { type, index }) {
     switch (type) {
