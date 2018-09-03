@@ -27,9 +27,6 @@ class AlphabetImage extends Component {
     setImageIndex() {
 
         const { uri, index, setImageIndex } = this.props;
-        // console.log(`Click: ${index}`);
-        // console.log(uri);
-        // console.log(setImageIndex);
 
         if (uri)
             setImageIndex(index);

@@ -16,6 +16,11 @@ body {
     margin: 0;
 }
 
+/* @font-face {
+    font-family: 'sandbox';
+    src: url('../res/fonts/sandbox-melodrama.ttf');
+} */
+
 #root {
     width: 100vw;
     height: 100vh;

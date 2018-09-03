@@ -1,5 +1,14 @@
-.main-space{
+.main-space {
     width: 100%;
     height: calc(var(--alphabeth-dp) * 5);
     z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-space>img {
+    max-width: 90%;
+    max-height: 90%;
 }
