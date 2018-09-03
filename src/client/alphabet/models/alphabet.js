@@ -140,42 +140,78 @@ export default function getAlphabet() {
             {
                 letter: 'J',
                 names: ["Jabłko", "Jajko", "Jeleń", "Jeż", "Język"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/415/415733.svg',
+                    'https://image.flaticon.com/icons/svg/590/590794.svg',
+                    'https://image.flaticon.com/icons/svg/427/427536.svg',
+                    'https://image.flaticon.com/icons/svg/789/789405.svg',
+                    'https://image.flaticon.com/icons/svg/599/599365.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'K',
                 names: ["Kawa", "Kiwi", "Komputer", "Kot", "Książka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/590/590836.svg',
+                    'https://image.flaticon.com/icons/svg/415/415756.svg',
+                    'https://image.flaticon.com/icons/svg/609/609908.svg',
+                    'https://image.flaticon.com/icons/svg/616/616558.svg',
+                    'https://image.flaticon.com/icons/svg/167/167755.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'L',
                 names: ["Lampka", "Laptop", "Latarka", "Lew", "Lis"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/230/230294.svg',
+                    'https://image.flaticon.com/icons/svg/428/428001.svg',
+                    'https://image.flaticon.com/icons/svg/249/249775.svg',
+                    'https://image.flaticon.com/icons/svg/490/490125.svg',
+                    'https://image.flaticon.com/icons/svg/375/375095.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'Ł',
                 names: ["Łabędź", "Łopatka", "Łoś", "Łódka", "Łyżka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/361/361298.svg',
+                    'https://image.flaticon.com/icons/svg/609/609834.svg',
+                    'https://image.flaticon.com/icons/svg/375/375088.svg',
+                    'https://image.flaticon.com/icons/svg/613/613927.svg',
+                    'https://image.flaticon.com/icons/svg/189/189958.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'M',
                 names: ["Malina", "Małpka", "Marchewka", "Motor", "Motyl"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/135/135706.svg',
+                    'https://image.flaticon.com/icons/svg/616/616433.svg',
+                    'https://image.flaticon.com/icons/svg/135/135687.svg',
+                    'https://image.flaticon.com/icons/svg/575/575707.svg',
+                    'https://image.flaticon.com/icons/svg/235/235423.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'N',
                 names: ["Niedźwiedź", "Nietoperz", "Nosorożec", "Nożyczki", "Nuta"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/235/235353.svg',
+                    'https://image.flaticon.com/icons/svg/616/616454.svg',
+                    'https://image.flaticon.com/icons/svg/490/490126.svg',
+                    'https://image.flaticon.com/icons/svg/129/129494.svg',
+                    'https://image.flaticon.com/icons/svg/141/141518.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -189,7 +225,13 @@ export default function getAlphabet() {
             {
                 letter: 'O',
                 names: ["Okulary", "Ołówek", "Osiołek", "Ośmiornica", "Owca"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/184/184620.svg',
+                    'https://image.flaticon.com/icons/svg/179/179564.svg',
+                    'https://image.flaticon.com/icons/svg/371/371670.svg',
+                    'https://image.flaticon.com/icons/svg/501/501197.svg',
+                    'https://image.flaticon.com/icons/svg/375/375057.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -203,21 +245,39 @@ export default function getAlphabet() {
             {
                 letter: 'P',
                 names: ["Pingwin", "Pociąg", "Poduszka", "Pomarańcza", "Pomidor"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/614/614091.svg',
+                    'https://image.flaticon.com/icons/svg/619/619031.svg',
+                    'https://image.flaticon.com/icons/svg/360/360077.svg',
+                    'https://image.flaticon.com/icons/svg/415/415734.svg',
+                    'https://image.flaticon.com/icons/svg/199/199620.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'R',
                 names: ["Rak", "Rekin", "Rower", "Róża", "Ryba"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/146/146687.svg',
+                    'https://image.flaticon.com/icons/svg/616/616510.svg',
+                    'https://image.flaticon.com/icons/svg/296/296209.svg',
+                    'https://image.flaticon.com/icons/svg/545/545173.svg',
+                    'https://image.flaticon.com/icons/svg/616/616503.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'S',
                 names: ["Sałata", "Samochód", "Samolot", "Słoń", "Sowa"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/424/424227.svg',
+                    'https://image.flaticon.com/icons/svg/618/618965.svg',
+                    'https://image.flaticon.com/icons/svg/619/619043.svg',
+                    'https://image.flaticon.com/icons/svg/616/616537.svg',
+                    'https://image.flaticon.com/icons/svg/616/616451.svg'
+                ]
             }
         ),
         new AlphabetItem(
