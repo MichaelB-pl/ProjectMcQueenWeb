@@ -14,6 +14,8 @@
     overflow: overlay;
     transition: 3s;
     transform: rotateX(180deg);
+    font-size: calc(var(--bar-size) * 0.6);
+    transition: height var(--transition-duration), font-size var(--transition-duration);
 }
 
 .letters-bar:hover::-webkit-scrollbar {
@@ -39,4 +41,13 @@
 
 .letters-bar::-webkit-scrollbar-thumb:hover {
     background: #fffc;
+}
+
+
+
+@media screen and (orientation:landscape) and (max-height: 480px) {
+    .letters-bar {
+        height: calc(var(--bar-size) * 0.8);
+        font-size: calc(var(--bar-size) * 0.48);
+    }
 }

@@ -18,5 +18,11 @@
     .main-space{
         height: calc(var(--alphabeth-dp) * 6);
     }
+
+    @media(max-height: 480px) {
+        .main-space{
+            height: calc(var(--alphabeth-dp) * 6 + var(--bar-size) * 0.2);
+        }
+    }
 }
 
