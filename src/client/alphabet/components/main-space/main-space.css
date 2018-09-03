@@ -6,9 +6,17 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    transition: height var(--transition-duration);
 }
 
 .main-space>img {
     max-width: 90%;
     max-height: 90%;
 }
+
+@media screen and (orientation:landscape) {
+    .main-space{
+        height: calc(var(--alphabeth-dp) * 6);
+    }
+}
+

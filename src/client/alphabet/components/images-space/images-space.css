@@ -7,4 +7,11 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    transition: height var(--transition-duration);
+}
+
+@media screen and (orientation:landscape) {
+    .images-space{
+        height: calc(var(--alphabeth-dp) * 2);
+    }
 }
