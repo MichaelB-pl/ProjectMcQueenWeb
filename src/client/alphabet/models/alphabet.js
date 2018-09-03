@@ -26,14 +26,26 @@ export default function getAlphabet() {
             {
                 letter: 'B',
                 names: ["Balon", "Banan", "Biedronka", "Bocian", "Butelka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/448/448025.svg',
+                    'https://image.flaticon.com/icons/svg/590/590769.svg',
+                    'https://image.flaticon.com/icons/svg/616/616477.svg',
+                    'https://image.flaticon.com/icons/svg/673/673588.svg',
+                    'https://image.flaticon.com/icons/svg/135/135662.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'C',
                 names: ["Chmura", "Ciężarówka", "Cytryna", "Czapka", "Chomik"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/148/148828.svg',
+                    'https://image.flaticon.com/icons/svg/296/296211.svg',
+                    'https://image.flaticon.com/icons/svg/135/135750.svg',
+                    'https://image.flaticon.com/icons/svg/892/892420.svg',
+                    'https://image.flaticon.com/icons/svg/361/361270.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -47,14 +59,23 @@ export default function getAlphabet() {
             {
                 letter: 'D',
                 names: ["Delfin", "Dom", "Drzewo", "Dynia", "Dźwig"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/616/616508.svg',
+                    'https://image.flaticon.com/icons/svg/351/351688.svg',
+                    'https://image.flaticon.com/icons/svg/490/490091.svg',
+                    'https://image.flaticon.com/icons/svg/135/135705.svg',
+                    'https://image.flaticon.com/icons/svg/292/292037.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'E',
                 names: ["Ekran", "Ekierka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/124/124092.svg',
+                    'https://image.flaticon.com/icons/svg/167/167724.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -68,28 +89,51 @@ export default function getAlphabet() {
             {
                 letter: 'F',
                 names: ["Fala", "Flet", "Foka", "Fortepian", "Frytki"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/616/616545.svg',
+                    'https://image.flaticon.com/icons/svg/123/123451.svg',
+                    'https://image.flaticon.com/icons/svg/188/188203.svg',
+                    'https://image.flaticon.com/icons/svg/527/527131.svg',
+                    'https://image.flaticon.com/icons/svg/590/590804.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'G',
                 names: ["Gepard", "Gołąb", "Grabie", "Gruszka", "Grzyb"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/371/371659.svg',
+                    'https://image.flaticon.com/icons/svg/361/361264.svg',
+                    'https://image.flaticon.com/icons/svg/188/188345.svg',
+                    'https://image.flaticon.com/icons/svg/415/415767.svg',
+                    'https://image.flaticon.com/icons/svg/263/263837.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'H',
                 names: ["Hak", "Helikopter", "Hipopotam", "Hulajnoga", "Huśtawka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/189/189212.svg',
+                    'https://image.flaticon.com/icons/svg/619/619041.svg',
+                    'https://image.flaticon.com/icons/svg/26/26118.svg',
+                    'https://image.flaticon.com/icons/svg/618/618981.svg',
+                    'https://image.flaticon.com/icons/svg/147/147119.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'I',
                 names: ["Iglo", "Igła", "Imbir", "Indyk"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/505/505691.svg',
+                    'https://image.flaticon.com/icons/svg/209/209249.svg',
+                    'https://image.flaticon.com/icons/svg/1087/1087419.svg',
+                    'https://image.flaticon.com/icons/svg/616/616565.svg'
+                ]
             }
         ),
         new AlphabetItem(
