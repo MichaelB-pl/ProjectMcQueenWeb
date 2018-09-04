@@ -284,14 +284,26 @@ export default function getAlphabet() {
             {
                 letter: 'Ś',
                 names: ["Ślimak", "Śliwka", "Śrubokręt", "Świeczka", "Świnka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/616/616470.svg',
+                    'https://image.flaticon.com/icons/svg/765/765531.svg',
+                    'https://image.flaticon.com/icons/svg/269/269981.svg',
+                    'https://image.flaticon.com/icons/svg/275/275693.svg',
+                    'https://image.flaticon.com/icons/svg/776/776487.svg'
+                ]
             }
         ),
         new AlphabetItem(
             {
                 letter: 'T',
                 names: ["Telefon", "Traktor", "Truskawka", "Tukan", "Tygrys"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/244/244798.svg',
+                    'https://image.flaticon.com/icons/svg/361/361897.svg',
+                    'https://image.flaticon.com/icons/svg/135/135717.svg',
+                    'https://image.flaticon.com/icons/svg/375/375082.svg',
+                    'https://image.flaticon.com/icons/svg/375/375073.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -305,7 +317,13 @@ export default function getAlphabet() {
             {
                 letter: 'W',
                 names: ["Wąż", "Wiatrak", "Widelec", "Wielbłąd", "Wiewiórka"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/616/616487.svg',
+                    'https://image.flaticon.com/icons/svg/188/188360.svg',
+                    'https://image.flaticon.com/icons/svg/271/271480.svg',
+                    'https://image.flaticon.com/icons/svg/616/616534.svg',
+                    'https://image.flaticon.com/icons/svg/604/604239.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -319,7 +337,13 @@ export default function getAlphabet() {
             {
                 letter: 'Z',
                 names: ["Zając", "Zamek", "Ząb", "Zebra", "Zupa"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/165/165179.svg',
+                    'https://image.flaticon.com/icons/svg/1065/1065492.svg',
+                    'https://image.flaticon.com/icons/svg/139/139196.svg',
+                    'https://image.flaticon.com/icons/svg/616/616555.svg',
+                    'https://image.flaticon.com/icons/svg/454/454570.svg'
+                ]
             }
         ),
         new AlphabetItem(
@@ -333,7 +357,11 @@ export default function getAlphabet() {
             {
                 letter: 'Ż',
                 names: ["Żaba", "Żółw", "Żyrafa"],
-                uris: []
+                uris: [
+                    'https://image.flaticon.com/icons/svg/346/346211.svg',
+                    'https://image.flaticon.com/icons/svg/616/616485.svg',
+                    'https://image.flaticon.com/icons/svg/427/427483.svg'
+                ]
             }
         )
     ];
