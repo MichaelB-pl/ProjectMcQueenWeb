@@ -34,7 +34,6 @@ const creators = [
 
 function loadSessionInfo() {
     Promise.all(promises).then(indexes => {
-        console.log(indexes);
         for (let j = 0; j < indexes.length; j++) {
             store.dispatch(creators[j](indexes[j]));
         }
