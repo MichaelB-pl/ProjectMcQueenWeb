@@ -6,6 +6,8 @@ import getAlphabet from '../../models/alphabet';
 import { setDefaultImageIndex } from '../../actions/alphabet-actions';
 import { mainMenu } from '../../../app/actions/app-actions';
 
+import { playAudio, getLettersAudioUri } from '../../../../res/audio/player';
+
 const mapStateToProps = ({ selectedLetterIndex, selectedLetterImageIndex }) => {
     return {
         selectedLetterIndex,
@@ -31,7 +33,7 @@ class MainSpace extends Component {
                 <div className="alphabeth-back-button" onClick={this.mainMenu.bind(this)}>
                     &larr;
                 </div>
-                <div className="letter-background">
+                <div className="letter-background" onClick={this.playLetterName.bind(this)}>
                     {this.getDisplayerLetter()}
                 </div>
                 <img src={this.getImageUri()} onClick={this.setDefaultImageIndex.bind(this)} />
@@ -48,6 +50,13 @@ class MainSpace extends Component {
         const { selectedLetterIndex, selectedLetterImageIndex } = this.props;
         const letterData = getAlphabet()[selectedLetterIndex];
         return letterData.uris[selectedLetterImageIndex];
+    }
+
+    playLetterName() {
+        const { selectedLetterIndex } = this.props;
+        const letter = getAlphabet()[selectedLetterIndex].letter;
+        const audioUri = getLettersAudioUri(letter, letter);
+        playAudio(audioUri);
     }
 
     getDisplayerLetter() {

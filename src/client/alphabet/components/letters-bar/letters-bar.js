@@ -13,7 +13,7 @@ const mapStateToProps = ({ selectedLetterIndex }) => {
 };
 
 function LettersBar(props) {
-    const alphabet = getAlphabet().map(letter => letter.letter);
+    const alphabet = getAlphabet();
 
     return (
         <div className="letters-bar">
@@ -22,7 +22,11 @@ function LettersBar(props) {
                 &larr;
             </li> */}
                 {alphabet.map((letter, index) =>
-                    <LetterListItem letter={letter} index={index} isSelected={index === props.selectedLetterIndex} key={`letter_list_item_${index}`} />)}
+                    <LetterListItem
+                        letter={letter.letter}
+                        index={index}
+                        isSelected={index === props.selectedLetterIndex}
+                        key={`letter_list_item_${index}`} />)}
             </ul>
         </div>
     );

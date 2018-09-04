@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 
 import { setImageIndex } from '../../../actions/alphabet-actions';
+import { playAudio, getLettersAudioUri } from '../../../../../res/audio/player';
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -25,8 +26,10 @@ class AlphabetImage extends Component {
     }
 
     setImageIndex() {
+        const { letter, names, uri, index, setImageIndex } = this.props;
 
-        const { uri, index, setImageIndex } = this.props;
+        const audioUri = getLettersAudioUri(letter, names[index]);
+        playAudio(audioUri);
 
         if (uri)
             setImageIndex(index);
