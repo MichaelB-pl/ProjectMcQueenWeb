@@ -15,12 +15,37 @@
     height: 100%;
     color: #0003;
     position: absolute;
-    font-size: 50vmin;
+    font-size: 40vmin;
     z-index: 2;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.main-space:hover>.alphabeth-back-button {
+    left: calc(0px - var(--bar-size) + var(--spacing-small));
+}
+
+.alphabeth-back-button {
+    width: var(--bar-size);
+    height: var(--bar-size);
+    background-color: var(--color-primary-light);
+    left: calc(0px - var(--bar-size));
+    border-radius: 0 var(--spacing-small) var(--spacing-small) 0;
+    position: absolute;
+    z-index: 9;
+    transition: left var(--transition-duration);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--bar-size) * 0.6);
+    padding-bottom: var(--spacing-small);
+}
+
+.main-space:hover>.alphabeth-back-button:hover {
+    left: 0;
 }
 
 .main-space>img {

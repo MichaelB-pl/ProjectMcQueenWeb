@@ -1,6 +1,7 @@
 :root {
     --spacing: 16px;
     --spacing-big: 32px;
+    --spacing-small: 8px;
     --topbar-height: 56px;
     --color-primary: #8bc34a;
     --color-primary-dark: #5a9216;

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import getAlphabet from '../../models/alphabet';
 import { setDefaultImageIndex } from '../../actions/alphabet-actions';
+import { mainMenu } from '../../../app/actions/app-actions';
 
 const mapStateToProps = ({ selectedLetterIndex, selectedLetterImageIndex }) => {
     return {
@@ -14,7 +15,8 @@ const mapStateToProps = ({ selectedLetterIndex, selectedLetterImageIndex }) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setDefaultImageIndex: () => dispatch(setDefaultImageIndex())
+        setDefaultImageIndex: () => dispatch(setDefaultImageIndex()),
+        mainMenu: () => dispatch(mainMenu())
     };
 };
 
@@ -26,12 +28,20 @@ class MainSpace extends Component {
     render() {
         return (
             <div className="main-space">
+                <div className="alphabeth-back-button" onClick={this.mainMenu.bind(this)}>
+                    &larr;
+                </div>
                 <div className="letter-background">
                     {this.getDisplayerLetter()}
                 </div>
                 <img src={this.getImageUri()} onClick={this.setDefaultImageIndex.bind(this)} />
             </div>
         );
+    }
+
+    mainMenu() {
+        const { mainMenu } = this.props;
+        mainMenu();
     }
 
     getImageUri() {
