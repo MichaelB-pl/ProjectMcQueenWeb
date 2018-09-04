@@ -1,53 +1,64 @@
 .letters-bar {
     width: 100%;
     height: var(--bar-size);
+    display: block;
     background-color: var(--color-primary);
-    margin: 0;
-    padding: 0;
     box-shadow: 0 0 16px 0 black;
     z-index: 80;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    overflow: overlay;
-    transition: 3s;
-    transform: rotateX(180deg);
     font-size: calc(var(--bar-size) * 0.6);
     transition: height var(--transition-duration), font-size var(--transition-duration);
 }
 
-.letters-bar:hover::-webkit-scrollbar {
+.letters-list {
+    width: var(--bar-size);
+    height: 100vw;
+    margin: calc(-50vw + var(--bar-size) / 2) 0 0 calc(50vw - var(--bar-size) / 2);
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    transition: 3s;
+    transform: rotate(-90deg);
+    transition: width var(--transition-duration);
+}
+
+.letters-list:hover::-webkit-scrollbar {
     display: initial;
 }
 
-.letters-bar::-webkit-scrollbar {
-    height: calc(var(--bar-size) * 0.15);
+.letters-list::-webkit-scrollbar {
+    width: calc(var(--bar-size) * 0.15);
     display: none;
 }
 
-.letters-bar::-webkit-scrollbar-track {
+.letters-list::-webkit-scrollbar-track {
     background: #0000;
 }
 
-.letters-bar::-webkit-scrollbar-track:hover {
+.letters-list::-webkit-scrollbar-track:hover {
     background: #0002;
 }
 
-.letters-bar::-webkit-scrollbar-thumb {
+.letters-list::-webkit-scrollbar-thumb {
     background: #fff3;
 }
 
-.letters-bar::-webkit-scrollbar-thumb:hover {
+.letters-list::-webkit-scrollbar-thumb:hover {
     background: #fffc;
 }
-
-
 
 @media screen and (orientation:landscape) and (max-height: 480px) {
     .letters-bar {
         height: calc(var(--bar-size) * 0.8);
         font-size: calc(var(--bar-size) * 0.48);
+    }
+    .letters-list {
+        /* background-color: pink; */
+        width: calc(var(--bar-size) * 0.8);
+        margin: calc(-50vw + var(--bar-size) / 2 * 0.8) 0 0 calc(50vw - var(--bar-size) / 2 * 0.8);
     }
 }

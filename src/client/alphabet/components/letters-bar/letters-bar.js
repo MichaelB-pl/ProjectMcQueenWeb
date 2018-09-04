@@ -16,13 +16,15 @@ function LettersBar(props) {
     const alphabet = getAlphabet().map(letter => letter.letter);
 
     return (
-        <ul className="letters-bar">
-            {/* <li className="letter-list-item">
+        <div className="letters-bar">
+            <ul className="letters-list">
+                {/* <li className="letter-list-item">
                 &larr;
             </li> */}
-            {alphabet.map((letter, index) =>
-                <LetterListItem letter={letter} index={index} isSelected={index === props.selectedLetterIndex} key={`letter_list_item_${index}`} />)}
-        </ul>
+                {alphabet.map((letter, index) =>
+                    <LetterListItem letter={letter} index={index} isSelected={index === props.selectedLetterIndex} key={`letter_list_item_${index}`} />)}
+            </ul>
+        </div>
     );
 }
 

@@ -7,5 +7,5 @@
     align-items: center;
     color: white;
     font-weight: bolder;
-    transform: rotateX(180deg);
+    transform: rotate(90deg);
 }
