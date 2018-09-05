@@ -1,0 +1,7 @@
+.spell-dialog {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-extra-light);
+    position: absolute;
+    z-index: 150;
+}

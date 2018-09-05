@@ -6,6 +6,7 @@ import LettersBar from './components/letters-bar/letters-bar';
 import MainSpace from './components/main-space/main-space';
 import SpellBar from './components/spell-bar/spell-bar';
 import ImagesSpace from './components/images-space/images-space';
+import SpellDialog from './components/spell-dialog/spell-dialog';
 
 function Alphabet(props) {
     return (
@@ -14,6 +15,7 @@ function Alphabet(props) {
             <MainSpace />
             <SpellBar />
             <ImagesSpace />
+            {/* <SpellDialog /> */}
         </div>
     );
 }
